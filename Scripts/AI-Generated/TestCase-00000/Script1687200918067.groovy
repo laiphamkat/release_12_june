@@ -1,8 +1,8 @@
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.model.FailureHandling
 
 'Initialize test session: Open browser and set view port'
 
@@ -62,9 +62,9 @@ WebUI.submit(testObj)
 
 WebUI.delay(15)
 
-'step 3: At Page_inventory_html click on hyperlink_item_2_title_link --> navigate to Page_inventory-item_html'
+'step 3: At Page_inventory_html click on hyperlink_item_4_title_link --> navigate to Page_inventory-item_html'
 
-testObj = findTestObject('Object Repository/Page_inventory_html/hyperlink_object')
+testObj = findTestObject('Object Repository/Page_inventory_html/hyperlink_object_1')
 
 WebUI.delay(3)
 
