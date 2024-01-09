@@ -15,8 +15,8 @@
         <initValue>'https://www.saucedemo.com'</initValue>
         <name>application_domain</name>
     </GlobalVariableEntity>
-    <defaultProfile>False</defaultProfile>
+    <defaultProfile>True</defaultProfile>
     <description></description>
-    <name>qe</name>
+    <name>test</name>
     <tag></tag>
 </GlobalVariableEntities>

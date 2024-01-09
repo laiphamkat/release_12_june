@@ -1,0 +1,16 @@
+Flow ID,Description,Test Steps,Flow Priority
+1,Verify Checkout Completion after Adding Items to Cart,"step 1: Navigate to Page home
+step 2: Login at Page home --> navigate to Page inventory html
+step 3: At Page inventory html click on hyperlink object --> navigate to Page cart html
+step 4: At Page cart html click on button checkout --> navigate to Page checkout-step-one html
+step 5: At Page checkout-step-one html input on input firstname
+step 6: At Page checkout-step-one html input on input lastname
+step 7: At Page checkout-step-one html input on input postalcode
+step 8: At Page checkout-step-one html click on input continue --> navigate to Page checkout-step-two html
+step 9: At Page checkout-step-two html click on button finish --> navigate to Page checkout-complete html
+step 10: Add visual checkpoint at Page checkout-complete html",High
+2,Verify Item Availability in Inventory Page,"step 1: Navigate to Page home
+step 2: Login at Page home --> navigate to Page inventory html
+step 3: Navigate to Page inventory html --> navigate to Page inventory-item html
+step 4: At Page inventory-item html click on button add to cart item not found
+step 5: Add visual checkpoint at Page inventory-item html",Low
