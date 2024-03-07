@@ -1,7 +1,7 @@
-import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import katalon.truetest.TrueTestScripts
 import internal.GlobalVariable as GlobalVariable
+import katalon.truetest.TrueTestScripts
+import com.kms.katalon.core.model.FailureHandling
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 'Initialize test session: Open browser and set view port'
@@ -204,7 +204,7 @@ WebUI.enhancedClick(findTestObject('Page_checkout-step-one_html/input_object_3')
 
 "Step 21: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC2-Verify Successful Checkout Step Two for Sauce Labs Bolt T Shirt_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC2-Verify Successful Checkout Step Two Process for Sauce Labs Bolt T Shirt_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

@@ -1,5 +1,5 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Successful Checkout Process for Sauce Labs Fleece Jacket,"Navigate to the home page, login, and add the Sauce Labs Fleece Jacket to the cart. Proceed to checkout, enter the required details, and complete the checkout process. Verify that the checkout is complete.","step 1: Navigate to https://katalon.atlassian.net/
+1,Verify Successful Checkout Process for Sauce Labs Fleece Jacket,Navigate to the home page and login. Add the Sauce Labs Fleece Jacket to the cart and proceed to checkout. Enter the required information and complete the checkout process. Verify that the checkout is complete.,"step 1: Navigate to https://katalon.atlassian.net/
 step 2: Login
 step 3: Click on div
 step 4: Click on input field 'user-name'
@@ -20,7 +20,7 @@ step 18: Enter input value in input field 'postalCode'
 step 19: Click on input field 'continue' -> Navigate to page 'checkout-step-two.html'
 step 20: Click on button 'finish' -> Navigate to page 'checkout-complete.html'
 step 21: Take full page screenshot as checkpoint",High
-2,Verify Successful Checkout Step Two for Sauce Labs Bolt T Shirt,"Navigate to the home page, login, and add the Sauce Labs Bolt T-Shirt to the cart. Proceed to checkout, enter the required details, and proceed to the checkout step two. Verify the checkout step two.","step 1: Navigate to https://katalon.atlassian.net/
+2,Verify Successful Checkout Step Two Process for Sauce Labs Bolt T Shirt,Navigate to the home page and login. Add the Sauce Labs Bolt T-Shirt to the cart and proceed to checkout. Enter the required information and proceed to the second step of the checkout process. Verify the completion of the second step.,"step 1: Navigate to https://katalon.atlassian.net/
 step 2: Login
 step 3: Click on div
 step 4: Click on input field 'user-name'
