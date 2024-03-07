@@ -1,17 +1,43 @@
-Flow ID,Description,Test Steps,Flow Priority
-1,Verify Successful Checkout Process with Valid User Information,"step 1: Navigate to Page home
-step 2: Login at Page home --> navigate to Page inventory html
-step 3: At Page inventory html click on button add to cart sauce labs backpack
-step 4: At Page inventory html click on hyperlink object --> navigate to Page cart html
-step 5: At Page cart html click on button checkout --> navigate to Page checkout-step-one html
-step 6: At Page checkout-step-one html input on input firstname
-step 7: At Page checkout-step-one html input on input lastname
-step 8: At Page checkout-step-one html input on input postalcode
-step 9: At Page checkout-step-one html click on input continue --> navigate to Page checkout-step-two html
-step 10: At Page checkout-step-two html click on button finish --> navigate to Page checkout-complete html
-step 11: Add visual checkpoint at Page checkout-complete html",High
-2,Verify Item Not Found Error on Inventory Item Page,"step 1: Navigate to Page home
-step 2: Login at Page home --> navigate to Page inventory html
-step 3: Navigate to Page inventory html --> navigate to Page inventory-item html
-step 4: At Page inventory-item html click on button add to cart item not found
-step 5: Add visual checkpoint at Page inventory-item html",Low
+Flow ID,Name,Description,Test Steps,Flow Priority
+1,Verify Successful Checkout Process for Sauce Labs Fleece Jacket,"Navigate to the home page, login, and add the Sauce Labs Fleece Jacket to the cart. Proceed to checkout, enter the required details, and complete the checkout process. Verify that the checkout is complete.","step 1: Navigate to https://katalon.atlassian.net/
+step 2: Login
+step 3: Click on div
+step 4: Click on input field 'user-name'
+step 5: Enter input value in input field 'user-name'
+step 6: Click on div
+step 7: Click on input field 'password'
+step 8: Enter input value in input field 'password'
+step 9: Click on input field 'login-button' -> Navigate to page 'inventory.html'
+step 10: Click on button 'add-to-cart-sauce-labs-fleece-jacket'
+step 11: Click on link  -> Navigate to page 'cart.html'
+step 12: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
+step 13: Click on input field 'firstName'
+step 14: Enter input value in input field 'firstName'
+step 15: Click on input field 'lastName'
+step 16: Enter input value in input field 'lastName'
+step 17: Click on input field 'postalCode'
+step 18: Enter input value in input field 'postalCode'
+step 19: Click on input field 'continue' -> Navigate to page 'checkout-step-two.html'
+step 20: Click on button 'finish' -> Navigate to page 'checkout-complete.html'
+step 21: Take full page screenshot as checkpoint",High
+2,Verify Successful Checkout Step Two for Sauce Labs Bolt T Shirt,"Navigate to the home page, login, and add the Sauce Labs Bolt T-Shirt to the cart. Proceed to checkout, enter the required details, and proceed to the checkout step two. Verify the checkout step two.","step 1: Navigate to https://katalon.atlassian.net/
+step 2: Login
+step 3: Click on div
+step 4: Click on input field 'user-name'
+step 5: Enter input value in input field 'user-name'
+step 6: Click on div
+step 7: Click on input field 'password'
+step 8: Enter input value in input field 'password'
+step 9: Click on input field 'login-button' -> Navigate to page 'inventory.html'
+step 10: Click on link  -> Navigate to page 'inventory-item.html'
+step 11: Click on button 'add-to-cart-sauce-labs-bolt-t-shirt'
+step 12: Click on link  -> Navigate to page 'cart.html'
+step 13: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
+step 14: Click on input field 'firstName'
+step 15: Enter input value in input field 'firstName'
+step 16: Click on input field 'lastName'
+step 17: Enter input value in input field 'lastName'
+step 18: Click on input field 'postalCode'
+step 19: Enter input value in input field 'postalCode'
+step 20: Click on input field 'continue' -> Navigate to page 'checkout-step-two.html'
+step 21: Take full page screenshot as checkpoint",Trivial
