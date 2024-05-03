@@ -1,43 +1,59 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Successful Checkout Process for Sauce Labs Fleece Jacket,Navigate to the home page and login. Add the Sauce Labs Fleece Jacket to the cart and proceed to checkout. Enter the required information and complete the checkout process. Verify that the checkout is complete.,"step 1: Navigate to https://katalon.atlassian.net/
-step 2: Login
-step 3: Click on div
-step 4: Click on input field 'user-name'
-step 5: Enter input value in input field 'user-name'
-step 6: Click on div
-step 7: Click on input field 'password'
-step 8: Enter input value in input field 'password'
-step 9: Click on input field 'login-button' -> Navigate to page 'inventory.html'
-step 10: Click on button 'add-to-cart-sauce-labs-fleece-jacket'
-step 11: Click on link  -> Navigate to page 'cart.html'
-step 12: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
-step 13: Click on input field 'firstName'
-step 14: Enter input value in input field 'firstName'
-step 15: Click on input field 'lastName'
-step 16: Enter input value in input field 'lastName'
-step 17: Click on input field 'postalCode'
-step 18: Enter input value in input field 'postalCode'
-step 19: Click on input field 'continue' -> Navigate to page 'checkout-step-two.html'
-step 20: Click on button 'finish' -> Navigate to page 'checkout-complete.html'
-step 21: Take full page screenshot as checkpoint",High
-2,Verify Successful Checkout Step Two Process for Sauce Labs Bolt T Shirt,Navigate to the home page and login. Add the Sauce Labs Bolt T-Shirt to the cart and proceed to checkout. Enter the required information and proceed to the second step of the checkout process. Verify the completion of the second step.,"step 1: Navigate to https://katalon.atlassian.net/
-step 2: Login
-step 3: Click on div
-step 4: Click on input field 'user-name'
-step 5: Enter input value in input field 'user-name'
-step 6: Click on div
-step 7: Click on input field 'password'
-step 8: Enter input value in input field 'password'
-step 9: Click on input field 'login-button' -> Navigate to page 'inventory.html'
-step 10: Click on link  -> Navigate to page 'inventory-item.html'
-step 11: Click on button 'add-to-cart-sauce-labs-bolt-t-shirt'
-step 12: Click on link  -> Navigate to page 'cart.html'
-step 13: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
-step 14: Click on input field 'firstName'
-step 15: Enter input value in input field 'firstName'
-step 16: Click on input field 'lastName'
-step 17: Enter input value in input field 'lastName'
-step 18: Click on input field 'postalCode'
-step 19: Enter input value in input field 'postalCode'
-step 20: Click on input field 'continue' -> Navigate to page 'checkout-step-two.html'
-step 21: Take full page screenshot as checkpoint",Trivial
+1,Verify Successful Order Completion for iPhone Cases,"Navigate to the iPhone cases category page. Select a price range, choose an item, and proceed to checkout. Fill in shipping details, continue to payment, and complete the order. Verify the 'Thank You' page.","Step 1: Navigate to https://cellphone-staging.aut.katalon.com/category/chekhly-na-iphone
+Step 2: Click on input field 'price min'
+Step 3: Click on input field 'price min'
+Step 4: Click on span
+Step 5: Proceed to checkout, fill shipping details, and continue to payment
+	- Step 1: Click on button 'Proceed to checkout' -> Navigate to page 'checkout/info'
+	- Step 2: Click on input field 'email'
+	- Step 3: Enter input value in input field 'email'
+	- Step 4: Click on button 'CONTINUE TO SHIPPING' -> Navigate to page 'checkout/shipping-address'
+	- Step 5: Click on input field 'shipping address.first name'
+	- Step 6: Enter input value in input field 'shipping address.first name'
+	- Step 7: Click on input field 'shipping address.last name'
+	- Step 8: Enter input value in input field 'shipping address.last name'
+	- Step 9: Click on div
+	- Step 10: Click on input field 'shipping address.address line 1'
+	- Step 11: Enter input value in input field 'shipping address.address line 1'
+	- Step 12: Click on input field 'shipping address.zip'
+	- Step 13: Enter input value in input field 'shipping address.zip'
+	- Step 14: Click on input field 'shipping address.city'
+	- Step 15: Enter input value in input field 'shipping address.city'
+	- Step 16: Click on input field 'shipping address.state'
+	- Step 17: Enter input value in input field 'shipping address.state'
+	- Step 18: Click on input field 'shipping address.phone'
+	- Step 19: Enter input value in input field 'shipping address.phone'
+	- Step 20: Click on button 'CONTINUE TO PAYMENT'
+Step 6: Click on button 'COMPLETE ORDER' -> Navigate to page 'thank-you/*'
+Step 7: Take full page screenshot as checkpoint
+",High
+2,Verify Checkout Process for Apple Products,"Navigate to the home page and access the Apple category. Choose an item, add it to the cart, and proceed to checkout. Fill in shipping details, continue to payment, and verify the checkout payment page.","Step 1: Navigate to https://cellphone-staging.aut.katalon.com/
+Step 2: Click on link 'Apple' -> Navigate to page 'category/apple'
+Step 3: Click on button
+Step 4: Click on label
+Step 5: Click on label
+Step 6: Click on button 'Buy'
+Step 7: Click on span
+Step 8: Proceed to checkout, fill shipping details, and continue to payment
+	- Step 1: Click on button 'Proceed to checkout' -> Navigate to page 'checkout/info'
+	- Step 2: Click on input field 'email'
+	- Step 3: Enter input value in input field 'email'
+	- Step 4: Click on button 'CONTINUE TO SHIPPING' -> Navigate to page 'checkout/shipping-address'
+	- Step 5: Click on input field 'shipping address.first name'
+	- Step 6: Enter input value in input field 'shipping address.first name'
+	- Step 7: Click on input field 'shipping address.last name'
+	- Step 8: Enter input value in input field 'shipping address.last name'
+	- Step 9: Click on div
+	- Step 10: Click on input field 'shipping address.address line 1'
+	- Step 11: Enter input value in input field 'shipping address.address line 1'
+	- Step 12: Click on input field 'shipping address.zip'
+	- Step 13: Enter input value in input field 'shipping address.zip'
+	- Step 14: Click on input field 'shipping address.city'
+	- Step 15: Enter input value in input field 'shipping address.city'
+	- Step 16: Click on input field 'shipping address.state'
+	- Step 17: Enter input value in input field 'shipping address.state'
+	- Step 18: Click on input field 'shipping address.phone'
+	- Step 19: Enter input value in input field 'shipping address.phone'
+	- Step 20: Click on button 'CONTINUE TO PAYMENT'
+Step 9: Take full page screenshot as checkpoint
+",Low
