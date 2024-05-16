@@ -1,0 +1,7 @@
+{
+    "steps": [
+        "step 1: Navigate to https://cellphone-staging.aut.katalon.com/",
+        "step 2: Click on list",
+        "step 3: Click on link '+1 (000) 123-45-67'"
+    ]
+}
