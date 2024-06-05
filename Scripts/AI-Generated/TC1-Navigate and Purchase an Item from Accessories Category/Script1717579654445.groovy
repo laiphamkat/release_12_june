@@ -1,7 +1,10 @@
-import katalon.truetest.TrueTestScripts
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.configuration.RunConfiguration
+import katalon.truetest.TrueTestScripts
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
+
+def reportLocation = RunConfiguration.getReportFolder()
 
 'Initialize test session: Open browser and set view port'
 
@@ -21,7 +24,7 @@ WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '?/?(?:#.*
 
 WebUI.enhancedClick(findTestObject('AI-Generated/Page_home/link_accessories'))
 
-WebUI.takeScreenshot()
+WebUI.takeScreenshot(reportLocation + '/TC1/Step 2: Click on link Accessories - Navigate to page category.png')
 
 "Step 3: Click on link  -> Navigate to page 'product/*'"
 
@@ -29,7 +32,7 @@ WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/category
 
 WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/link_samsungGalaxyS23Ultra'))
 
-WebUI.takeScreenshot()
+WebUI.takeScreenshot(reportLocation + '/TC1/Step 3: Click on link  - Navigate to page product.png')
 
 "Step 4: Click on button 'Buy'"
 
@@ -37,7 +40,7 @@ WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/product/
 
 WebUI.enhancedClick(findTestObject('AI-Generated/Page_product/button_buy'))
 
-WebUI.takeScreenshot()
+WebUI.takeScreenshot(reportLocation + '/TC1/Step 4: Click on button Buy.png')
 
 "Step 5: Click on link 'Place an order' -> Navigate to page 'cart'"
 
@@ -45,11 +48,11 @@ WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/product/
 
 WebUI.enhancedClick(findTestObject('AI-Generated/Page_product/link_placeAnOrder'))
 
-WebUI.takeScreenshot()
+WebUI.takeScreenshot(reportLocation + '/TC1/Step 5: Click on link Place an order - Navigate to page cart.png')
 
 "Step 6: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC2-Verify Successful Purchase Process from Home to Cart_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Navigate and Purchase an Item from Accessories Category_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
