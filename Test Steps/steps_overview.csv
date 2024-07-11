@@ -1,8 +1,72 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Navigate and Purchase an Item from Accessories Category,"Navigate to the homepage, access the Accessories category, select a product, add it to the cart, proceed to checkout, and verify the cart page.","Step 1: Navigate to https://cellphone-staging.aut.katalon.com/
-Step 2: Click on link 'Accessories' -> Navigate to page 'category/*'
-Step 3: Click on link  -> Navigate to page 'product/*'
-Step 4: Click on button 'Buy'
-Step 5: Click on link 'Place an order' -> Navigate to page 'cart'
+1,Purchase Apple Phone,"Navigate to the home page, select Apple category, choose a phone, add it to the cart, provide checkout info, proceed to payment, and complete the order. Verify successful return to the home page.","Step 1: Navigate to /
+Step 2: Click on link apple -> Navigate to page 'category/*'
+Step 3: Click on button bestChoiceHotNew
+Step 4: Click on label gb
+Step 5: Click on label gb
+Step 6: Click on button buy
+Step 7: Navigate to cart, provide checkout info, shipping address, and proceed to payment
+	- Step 1: Click on span goToCart -> Navigate to page '/cart'
+	- Step 2: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 3: Click on input email
+	- Step 4: Enter input value in input email
+	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
+	- Step 6: Click on input firstName
+	- Step 7: Enter input value in input firstName
+	- Step 8: Click on input lastName
+	- Step 9: Enter input value in input lastName
+	- Step 10: Click on div address
+	- Step 11: Click on input address
+	- Step 12: Enter input value in input address
+	- Step 13: Click on input zipcode
+	- Step 14: Enter input value in input zipcode
+	- Step 15: Click on input city
+	- Step 16: Enter input value in input city
+	- Step 17: Click on input state
+	- Step 18: Enter input value in input state
+	- Step 19: Click on input phone
+	- Step 20: Enter input value in input phone
+	- Step 21: Click on button continueToPayment
+Step 8: Click on button completeOrder -> Navigate to page ''
+Step 9: Take full page screenshot as checkpoint
+",High
+2,Purchase Samsung Galaxy S23 Ultra Accessories,"Navigate to the home page, select Accessories category, choose Samsung Galaxy S23 Ultra, add to cart, place an order, and verify successful return to the home page.","Step 1: Navigate to /
+Step 2: Click on link accessories -> Navigate to page 'category/*'
+Step 3: Click on link samsungGalaxyS23Ultra -> Navigate to page 'product/*'
+Step 4: Click on button buy
+Step 5: Click on link placeAnOrder -> Navigate to page ''
 Step 6: Take full page screenshot as checkpoint
+",High
+3,Filter Products by Price and Complete Order,"Navigate to a category, filter products by price, add to cart, provide checkout info, proceed to payment, and complete the order. Verify successful return to the home page.","Step 1: Navigate to category/*
+Step 2: Click on input priceMin
+Step 3: Click on input priceMin
+Step 4: Navigate to cart, provide checkout info, shipping address, and proceed to payment
+	- Step 1: Click on span goToCart -> Navigate to page '/cart'
+	- Step 2: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 3: Click on input email
+	- Step 4: Enter input value in input email
+	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
+	- Step 6: Click on input firstName
+	- Step 7: Enter input value in input firstName
+	- Step 8: Click on input lastName
+	- Step 9: Enter input value in input lastName
+	- Step 10: Click on div address
+	- Step 11: Click on input address
+	- Step 12: Enter input value in input address
+	- Step 13: Click on input zipcode
+	- Step 14: Enter input value in input zipcode
+	- Step 15: Click on input city
+	- Step 16: Enter input value in input city
+	- Step 17: Click on input state
+	- Step 18: Enter input value in input state
+	- Step 19: Click on input phone
+	- Step 20: Enter input value in input phone
+	- Step 21: Click on button continueToPayment
+Step 5: Click on button completeOrder -> Navigate to page ''
+Step 6: Take full page screenshot as checkpoint
+",High
+4,View Phone Accessories Details,"Navigate to the home page, view phone accessories details, and verify successful return to the home page.","Step 1: Navigate to /
+Step 2: Click on list phoneAccessories
+Step 3: Click on link 100012345 -> Navigate to page ''
+Step 4: Take full page screenshot as checkpoint
 ",High

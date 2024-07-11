@@ -1,11 +1,12 @@
 package katalon.truetest
 
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import com.kms.katalon.core.util.KeywordUtil
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class TrueTestScripts {
+    
     public static void login() {
         try {
             // Trigger a Login test case
