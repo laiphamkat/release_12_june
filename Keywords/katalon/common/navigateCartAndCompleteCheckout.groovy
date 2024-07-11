@@ -6,7 +6,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-public class completeCheckoutProcess {
+public class navigateCartAndCompleteCheckout {
     
     private static def execute_functional_method(Map data) {
         

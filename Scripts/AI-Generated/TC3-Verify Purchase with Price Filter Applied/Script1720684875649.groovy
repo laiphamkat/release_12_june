@@ -1,9 +1,9 @@
-import katalon.truetest.TrueTestScripts
-import internal.GlobalVariable
-import katalon.common.completeCheckoutProcess
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import katalon.common.navigateCartAndCompleteCheckout
+import katalon.truetest.TrueTestScripts
 import com.kms.katalon.core.configuration.RunConfiguration
+import internal.GlobalVariable
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 def reportLocation = RunConfiguration.getReportFolder()
 
@@ -35,9 +35,9 @@ WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/input_priceMin'))
 
 WebUI.takeScreenshot(reportLocation + '/TC3/Step 3: Click on input priceMin.png')
 
-"Step 4: Navigate to cart, provide checkout info, shipping address, and proceed to payment"
+"Step 4: Navigate to cart, provide checkout information, shipping address, and proceed to payment"
 
-completeCheckoutProcess.execute(data_path_0, Integer.valueOf(index_0))
+navigateCartAndCompleteCheckout.execute(data_path_0, Integer.valueOf(index_0))
 
 "Step 5: Click on button completeOrder -> Navigate to page ''"
 
@@ -49,7 +49,7 @@ WebUI.takeScreenshot(reportLocation + '/TC3/Step 5: Click on button completeOrde
 
 "Step 6: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC3-Filter Products by Price and Complete Order_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC3-Verify Purchase with Price Filter Applied_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

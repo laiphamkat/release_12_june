@@ -1,8 +1,8 @@
-import katalon.truetest.TrueTestScripts
-import internal.GlobalVariable
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import katalon.truetest.TrueTestScripts
 import com.kms.katalon.core.configuration.RunConfiguration
+import internal.GlobalVariable
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 def reportLocation = RunConfiguration.getReportFolder()
 
@@ -52,7 +52,7 @@ WebUI.takeScreenshot(reportLocation + '/TC2/Step 5: Click on link placeAnOrder -
 
 "Step 6: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC2-Purchase Samsung Galaxy S23 Ultra Accessories_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC2-Verify Purchase of Samsung Galaxy S23 Ultra Accessories_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

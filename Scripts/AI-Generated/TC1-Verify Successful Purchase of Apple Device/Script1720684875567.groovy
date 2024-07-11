@@ -1,9 +1,9 @@
-import katalon.truetest.TrueTestScripts
-import internal.GlobalVariable
-import katalon.common.completeCheckoutProcess
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import katalon.common.navigateCartAndCompleteCheckout
+import katalon.truetest.TrueTestScripts
 import com.kms.katalon.core.configuration.RunConfiguration
+import internal.GlobalVariable
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 def reportLocation = RunConfiguration.getReportFolder()
 
@@ -39,7 +39,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 3: Click on button bestChoiceHo
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/category/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/label_gb'))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/label_gb', ['dynamicInternalTextVariable': GlobalVariable.label_gb_dynamicInternalTextVariable, 'dynamicForVariable': GlobalVariable.label_gb_dynamicForVariable]))
 
 WebUI.takeScreenshot(reportLocation + '/TC1/Step 4: Click on label gb.png')
 
@@ -47,7 +47,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 4: Click on label gb.png')
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/category/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/label_gb'))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/label_gb', ['dynamicInternalTextVariable': GlobalVariable.label_gb_dynamicInternalTextVariable, 'dynamicForVariable': GlobalVariable.label_gb_dynamicForVariable]))
 
 WebUI.takeScreenshot(reportLocation + '/TC1/Step 5: Click on label gb.png')
 
@@ -59,9 +59,9 @@ WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/button_buy'))
 
 WebUI.takeScreenshot(reportLocation + '/TC1/Step 6: Click on button buy.png')
 
-"Step 7: Navigate to cart, provide checkout info, shipping address, and proceed to payment"
+"Step 7: Navigate to cart, provide checkout information, shipping address, and proceed to payment"
 
-completeCheckoutProcess.execute(data_path_0, Integer.valueOf(index_0))
+navigateCartAndCompleteCheckout.execute(data_path_0, Integer.valueOf(index_0))
 
 "Step 8: Click on button completeOrder -> Navigate to page ''"
 
@@ -73,7 +73,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 8: Click on button completeOrde
 
 "Step 9: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Purchase Apple Phone_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Successful Purchase of Apple Device_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

@@ -1,11 +1,11 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Purchase Apple Phone,"Navigate to the home page, select Apple category, choose a phone, add it to the cart, provide checkout info, proceed to payment, and complete the order. Verify successful return to the home page.","Step 1: Navigate to /
+1,Verify Successful Purchase of Apple Device,"Navigate to the home page, select Apple category, choose a product, proceed to checkout, provide shipping details, complete payment, and verify successful order completion.","Step 1: Navigate to /
 Step 2: Click on link apple -> Navigate to page 'category/*'
 Step 3: Click on button bestChoiceHotNew
 Step 4: Click on label gb
 Step 5: Click on label gb
 Step 6: Click on button buy
-Step 7: Navigate to cart, provide checkout info, shipping address, and proceed to payment
+Step 7: Navigate to cart, provide checkout information, shipping address, and proceed to payment
 	- Step 1: Click on span goToCart -> Navigate to page '/cart'
 	- Step 2: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
 	- Step 3: Click on input email
@@ -30,17 +30,17 @@ Step 7: Navigate to cart, provide checkout info, shipping address, and proceed t
 Step 8: Click on button completeOrder -> Navigate to page ''
 Step 9: Take full page screenshot as checkpoint
 ",High
-2,Purchase Samsung Galaxy S23 Ultra Accessories,"Navigate to the home page, select Accessories category, choose Samsung Galaxy S23 Ultra, add to cart, place an order, and verify successful return to the home page.","Step 1: Navigate to /
+2,Verify Purchase of Samsung Galaxy S23 Ultra Accessories,"Navigate to the home page, select Accessories category, choose Samsung Galaxy S23 Ultra, add to cart, proceed to checkout, and verify successful order completion.","Step 1: Navigate to /
 Step 2: Click on link accessories -> Navigate to page 'category/*'
 Step 3: Click on link samsungGalaxyS23Ultra -> Navigate to page 'product/*'
 Step 4: Click on button buy
 Step 5: Click on link placeAnOrder -> Navigate to page ''
 Step 6: Take full page screenshot as checkpoint
 ",High
-3,Filter Products by Price and Complete Order,"Navigate to a category, filter products by price, add to cart, provide checkout info, proceed to payment, and complete the order. Verify successful return to the home page.","Step 1: Navigate to category/*
+3,Verify Purchase with Price Filter Applied,"Navigate to a category, apply price filter, proceed to checkout, provide shipping details, complete payment, and verify successful order completion.","Step 1: Navigate to category/*
 Step 2: Click on input priceMin
 Step 3: Click on input priceMin
-Step 4: Navigate to cart, provide checkout info, shipping address, and proceed to payment
+Step 4: Navigate to cart, provide checkout information, shipping address, and proceed to payment
 	- Step 1: Click on span goToCart -> Navigate to page '/cart'
 	- Step 2: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
 	- Step 3: Click on input email
@@ -65,7 +65,7 @@ Step 4: Navigate to cart, provide checkout info, shipping address, and proceed t
 Step 5: Click on button completeOrder -> Navigate to page ''
 Step 6: Take full page screenshot as checkpoint
 ",High
-4,View Phone Accessories Details,"Navigate to the home page, view phone accessories details, and verify successful return to the home page.","Step 1: Navigate to /
+4,Verify Viewing Phone Accessories Details,"Navigate to the home page, view the list of phone accessories, select a specific item, and verify the details page.","Step 1: Navigate to /
 Step 2: Click on list phoneAccessories
 Step 3: Click on link 100012345 -> Navigate to page ''
 Step 4: Take full page screenshot as checkpoint

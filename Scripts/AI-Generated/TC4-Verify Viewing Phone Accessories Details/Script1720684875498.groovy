@@ -1,8 +1,8 @@
-import katalon.truetest.TrueTestScripts
-import internal.GlobalVariable
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import katalon.truetest.TrueTestScripts
 import com.kms.katalon.core.configuration.RunConfiguration
+import internal.GlobalVariable
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 def reportLocation = RunConfiguration.getReportFolder()
 
@@ -36,7 +36,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 3: Click on link 100012345 - Na
 
 "Step 4: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC4-View Phone Accessories Details_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC4-Verify Viewing Phone Accessories Details_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
