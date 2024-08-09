@@ -1,72 +1,186 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Successful Purchase of Apple Device,"Navigate to the home page, select Apple category, choose a product, proceed to checkout, provide shipping details, complete payment, and verify successful order completion.","Step 1: Navigate to /
-Step 2: Click on link apple -> Navigate to page 'category/*'
-Step 3: Click on button bestChoiceHotNew
-Step 4: Click on label gb
-Step 5: Click on label gb
-Step 6: Click on button buy
-Step 7: Navigate to cart, provide checkout information, shipping address, and proceed to payment
-	- Step 1: Click on span goToCart -> Navigate to page '/cart'
-	- Step 2: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+1,Verify Successful Checkout Process for iPhone 15,"Navigate to the homepage, add an iPhone 15 to the cart, proceed to checkout, provide shipping email, enter personal details, complete payment, and verify the completion on the homepage.","Step 1: Navigate to /
+Step 2: Click on button addToCart
+Step 3: Hover over item object
+Step 4: Click on link apple -> Navigate to page 'category/*'
+Step 5: Click on button hotNewiPhone15
+Step 6: Click on label 256Gb
+Step 7: Click on label 256Gb
+Step 8: Click on button dialog
+Step 9: Click on link goToCart
+Step 10: Proceed to checkout by providing email for shipping
+	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 2: Hover over div object
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
-	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
-	- Step 6: Click on input firstName
-	- Step 7: Enter input value in input firstName
-	- Step 8: Click on input lastName
-	- Step 9: Enter input value in input lastName
-	- Step 10: Click on div address
-	- Step 11: Click on input address
-	- Step 12: Enter input value in input address
-	- Step 13: Click on input zipcode
-	- Step 14: Enter input value in input zipcode
-	- Step 15: Click on input city
+	- Step 5: Click on button continueToShipping
+Step 11: Enter personal details for shipping and proceed to payment
+	- Step 1: Hover over div object
+	- Step 2: Click on input firstName
+	- Step 3: Hover over div object
+	- Step 4: Enter input value in input firstName
+	- Step 5: Click on input lastName
+	- Step 6: Hover over div object
+	- Step 7: Enter input value in input lastName
+	- Step 8: Click on input address
+	- Step 9: Hover over div object
+	- Step 10: Enter input value in input address
+	- Step 11: Click on input zipCode
+	- Step 12: Hover over div object
+	- Step 13: Enter input value in input zipCode
+	- Step 14: Click on input city
+	- Step 15: Hover over div object
 	- Step 16: Enter input value in input city
 	- Step 17: Click on input state
-	- Step 18: Enter input value in input state
-	- Step 19: Click on input phone
-	- Step 20: Enter input value in input phone
-	- Step 21: Click on button continueToPayment
-Step 8: Click on button completeOrder -> Navigate to page ''
-Step 9: Take full page screenshot as checkpoint
+	- Step 18: Hover over div object
+	- Step 19: Enter input value in input state
+	- Step 20: Click on input phone
+	- Step 21: Enter input value in input phone
+	- Step 22: Click on button continueToPayment
+Step 12: Click on button completeOrder -> Navigate to page ''
+Step 13: Take full page screenshot as checkpoint
 ",High
-2,Verify Purchase of Samsung Galaxy S23 Ultra Accessories,"Navigate to the home page, select Accessories category, choose Samsung Galaxy S23 Ultra, add to cart, proceed to checkout, and verify successful order completion.","Step 1: Navigate to /
-Step 2: Click on link accessories -> Navigate to page 'category/*'
-Step 3: Click on link samsungGalaxyS23Ultra -> Navigate to page 'product/*'
-Step 4: Click on button buy
-Step 5: Click on link placeAnOrder -> Navigate to page ''
-Step 6: Take full page screenshot as checkpoint
-",High
-3,Verify Purchase with Price Filter Applied,"Navigate to a category, apply price filter, proceed to checkout, provide shipping details, complete payment, and verify successful order completion.","Step 1: Navigate to category/*
-Step 2: Click on input priceMin
-Step 3: Click on input priceMin
-Step 4: Navigate to cart, provide checkout information, shipping address, and proceed to payment
-	- Step 1: Click on span goToCart -> Navigate to page '/cart'
-	- Step 2: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+2,Verify Ordering Process for iPhone 15 Pro in Blue Titanium,"Navigate to the homepage, select iPhone 15 Pro, customize color, add to cart, proceed to checkout, provide shipping email, enter personal details, complete payment, and verify the completion on the homepage.","Step 1: Navigate to /
+Step 2: Click on link iPhone15Pro -> Navigate to page 'product/*'
+Step 3: Click on button minus
+Step 4: Click on button minus
+Step 5: Click on button minus
+Step 6: Click on label blueTitanium
+Step 7: Click on label blueTitanium
+Step 8: Click on button minus
+Step 9: Click on link placeAnOrder
+Step 10: Proceed to checkout by providing email for shipping
+	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 2: Hover over div object
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
-	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
-	- Step 6: Click on input firstName
-	- Step 7: Enter input value in input firstName
-	- Step 8: Click on input lastName
-	- Step 9: Enter input value in input lastName
-	- Step 10: Click on div address
-	- Step 11: Click on input address
-	- Step 12: Enter input value in input address
-	- Step 13: Click on input zipcode
-	- Step 14: Enter input value in input zipcode
-	- Step 15: Click on input city
+	- Step 5: Click on button continueToShipping
+Step 11: Enter personal details for shipping and proceed to payment
+	- Step 1: Hover over div object
+	- Step 2: Click on input firstName
+	- Step 3: Hover over div object
+	- Step 4: Enter input value in input firstName
+	- Step 5: Click on input lastName
+	- Step 6: Hover over div object
+	- Step 7: Enter input value in input lastName
+	- Step 8: Click on input address
+	- Step 9: Hover over div object
+	- Step 10: Enter input value in input address
+	- Step 11: Click on input zipCode
+	- Step 12: Hover over div object
+	- Step 13: Enter input value in input zipCode
+	- Step 14: Click on input city
+	- Step 15: Hover over div object
 	- Step 16: Enter input value in input city
 	- Step 17: Click on input state
-	- Step 18: Enter input value in input state
-	- Step 19: Click on input phone
-	- Step 20: Enter input value in input phone
-	- Step 21: Click on button continueToPayment
-Step 5: Click on button completeOrder -> Navigate to page ''
-Step 6: Take full page screenshot as checkpoint
+	- Step 18: Hover over div object
+	- Step 19: Enter input value in input state
+	- Step 20: Click on input phone
+	- Step 21: Enter input value in input phone
+	- Step 22: Click on button continueToPayment
+Step 12: Click on button completeOrder -> Navigate to page ''
+Step 13: Take full page screenshot as checkpoint
 ",High
-4,Verify Viewing Phone Accessories Details,"Navigate to the home page, view the list of phone accessories, select a specific item, and verify the details page.","Step 1: Navigate to /
-Step 2: Click on list phoneAccessories
-Step 3: Click on link 100012345 -> Navigate to page ''
-Step 4: Take full page screenshot as checkpoint
+3,Verify Purchase of iPhone 15 Silicone Case with MagSafe,"Navigate to the homepage, select iPhone 15 Silicone Case, choose color, buy the case, proceed to checkout, provide shipping email, enter personal details, and verify the completion on the homepage.","Step 1: Navigate to /
+Step 2: Hover over item object
+Step 3: Click on link appleChekhlyNaIphone -> Navigate to page 'category/*'
+Step 4: Click on link iPhone15SiliconeCaseWithMagSafe -> Navigate to page 'product/*'
+Step 5: Click on label blueTitanium
+Step 6: Click on label blueTitanium
+Step 7: Click on button buy
+Step 8: Click on link placeAnOrder
+Step 9: Proceed to checkout by providing email for shipping
+	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 2: Hover over div object
+	- Step 3: Click on input email
+	- Step 4: Enter input value in input email
+	- Step 5: Click on button continueToShipping
+Step 10: Hover over div object
+Step 11: Click on input firstName -> Navigate to page ''
+Step 12: Take full page screenshot as checkpoint
+",High
+4,Verify Checkout Process for Multiple Items including Samsung Galaxy S23 Ultra,"Navigate to categories, add iPhone 15 and Samsung Galaxy S23 Ultra to the cart, proceed to checkout, provide shipping email, enter personal details, complete payment, and verify the completion on the homepage.","Step 1: Navigate to category/*
+Step 2: Click on button hotNewiPhone15
+Step 3: Click on link placeAnOrder
+Step 4: Proceed to checkout by providing email for shipping
+	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 2: Hover over div object
+	- Step 3: Click on input email
+	- Step 4: Enter input value in input email
+	- Step 5: Click on button continueToShipping
+Step 5: Enter personal details for shipping and proceed to payment
+	- Step 1: Hover over div object
+	- Step 2: Click on input firstName
+	- Step 3: Hover over div object
+	- Step 4: Enter input value in input firstName
+	- Step 5: Click on input lastName
+	- Step 6: Hover over div object
+	- Step 7: Enter input value in input lastName
+	- Step 8: Click on input address
+	- Step 9: Hover over div object
+	- Step 10: Enter input value in input address
+	- Step 11: Click on input zipCode
+	- Step 12: Hover over div object
+	- Step 13: Enter input value in input zipCode
+	- Step 14: Click on input city
+	- Step 15: Hover over div object
+	- Step 16: Enter input value in input city
+	- Step 17: Click on input state
+	- Step 18: Hover over div object
+	- Step 19: Enter input value in input state
+	- Step 20: Click on input phone
+	- Step 21: Enter input value in input phone
+	- Step 22: Click on button continueToPayment
+Step 6: Click on button completeOrder -> Navigate to page 'thank-you/*'
+Step 7: Click on link samsung -> Navigate to page 'category/*'
+Step 8: Click on link iPhone15SiliconeCaseWithMagSafe -> Navigate to page 'product/*'
+Step 9: Click on button buy
+Step 10: Click on link placeAnOrder -> Navigate to page '/cart'
+Step 11: Click on button increased
+Step 12: Click on button increased
+Step 13: Click on button increased
+Step 14: Click on button increased
+Step 15: Click on button increased
+Step 16: Click on button remove
+Step 17: Hover over item object
+Step 18: Click on link samsung -> Navigate to page 'category/*'
+Step 19: Click on div hot
+Step 20: Click on link samsungGalaxyS23UltraHot -> Navigate to page 'product/*'
+Step 21: Click on label blueTitanium
+Step 22: Click on label blueTitanium
+Step 23: Click on label blueTitanium
+Step 24: Click on button buy
+Step 25: Hover over link goToCart
+Step 26: Click on span object
+Step 27: Proceed to checkout by providing email for shipping
+	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 2: Hover over div object
+	- Step 3: Click on input email
+	- Step 4: Enter input value in input email
+	- Step 5: Click on button continueToShipping
+Step 28: Enter personal details for shipping and proceed to payment
+	- Step 1: Hover over div object
+	- Step 2: Click on input firstName
+	- Step 3: Hover over div object
+	- Step 4: Enter input value in input firstName
+	- Step 5: Click on input lastName
+	- Step 6: Hover over div object
+	- Step 7: Enter input value in input lastName
+	- Step 8: Click on input address
+	- Step 9: Hover over div object
+	- Step 10: Enter input value in input address
+	- Step 11: Click on input zipCode
+	- Step 12: Hover over div object
+	- Step 13: Enter input value in input zipCode
+	- Step 14: Click on input city
+	- Step 15: Hover over div object
+	- Step 16: Enter input value in input city
+	- Step 17: Click on input state
+	- Step 18: Hover over div object
+	- Step 19: Enter input value in input state
+	- Step 20: Click on input phone
+	- Step 21: Enter input value in input phone
+	- Step 22: Click on button continueToPayment
+Step 29: Click on button completeOrder -> Navigate to page ''
+Step 30: Take full page screenshot as checkpoint
 ",High

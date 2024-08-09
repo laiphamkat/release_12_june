@@ -1,0 +1,17 @@
+{
+    "steps": [
+        "step 1: Navigate to /",
+        "step 2: Click on link iPhone15Pro -> Navigate to page 'product/*'",
+        "step 3: Click on button minus",
+        "step 4: Click on button minus",
+        "step 5: Click on button minus",
+        "step 6: Click on label blueTitanium",
+        "step 7: Click on label blueTitanium",
+        "step 8: Click on button minus",
+        "step 9: Click on link placeAnOrder",
+        "step 10: Proceed to checkout by providing email for shipping",
+        "step 11: Enter personal details for shipping and proceed to payment",
+        "step 12: Click on button completeOrder -> Navigate to page ''",
+        "step 13: Take full page screenshot as checkpoint"
+    ]
+}
