@@ -1,5 +1,5 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Successful Checkout Process for iPhone 15,"Navigate to the homepage, add an iPhone 15 to the cart, proceed to checkout, provide shipping email, enter personal details, complete payment, and verify the completion on the homepage.","Step 1: Navigate to /
+1,Verify Checkout Process for Apple iPhone 15,"Navigate to the homepage, add an iPhone 15 to the cart, provide shipping email, enter shipping details, proceed to payment, complete the order, and verify the homepage.","Step 1: Navigate to /
 Step 2: Click on button addToCart
 Step 3: Hover over item object
 Step 4: Click on link apple -> Navigate to page 'category/*'
@@ -14,7 +14,7 @@ Step 10: Proceed to checkout by providing email for shipping
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
 	- Step 5: Click on button continueToShipping
-Step 11: Enter personal details for shipping and proceed to payment
+Step 11: Enter shipping details and proceed to payment
 	- Step 1: Hover over div object
 	- Step 2: Click on input firstName
 	- Step 3: Hover over div object
@@ -40,7 +40,7 @@ Step 11: Enter personal details for shipping and proceed to payment
 Step 12: Click on button completeOrder -> Navigate to page ''
 Step 13: Take full page screenshot as checkpoint
 ",High
-2,Verify Ordering Process for iPhone 15 Pro in Blue Titanium,"Navigate to the homepage, select iPhone 15 Pro, customize color, add to cart, proceed to checkout, provide shipping email, enter personal details, complete payment, and verify the completion on the homepage.","Step 1: Navigate to /
+2,Verify Checkout Process for iPhone 15 Pro in Blue Titanium,"Navigate to the homepage, select iPhone 15 Pro in Blue Titanium, add to cart, provide shipping email, enter shipping details, proceed to payment, complete the order, and verify the homepage.","Step 1: Navigate to /
 Step 2: Click on link iPhone15Pro -> Navigate to page 'product/*'
 Step 3: Click on button minus
 Step 4: Click on button minus
@@ -55,7 +55,7 @@ Step 10: Proceed to checkout by providing email for shipping
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
 	- Step 5: Click on button continueToShipping
-Step 11: Enter personal details for shipping and proceed to payment
+Step 11: Enter shipping details and proceed to payment
 	- Step 1: Hover over div object
 	- Step 2: Click on input firstName
 	- Step 3: Hover over div object
@@ -81,7 +81,7 @@ Step 11: Enter personal details for shipping and proceed to payment
 Step 12: Click on button completeOrder -> Navigate to page ''
 Step 13: Take full page screenshot as checkpoint
 ",High
-3,Verify Purchase of iPhone 15 Silicone Case with MagSafe,"Navigate to the homepage, select iPhone 15 Silicone Case, choose color, buy the case, proceed to checkout, provide shipping email, enter personal details, and verify the completion on the homepage.","Step 1: Navigate to /
+3,Verify Checkout Process for iPhone 15 Silicone Case with MagSafe,"Navigate to the homepage, select iPhone 15 Silicone Case with MagSafe, add to cart, provide shipping email, enter shipping details, proceed to payment, verify the homepage.","Step 1: Navigate to /
 Step 2: Hover over item object
 Step 3: Click on link appleChekhlyNaIphone -> Navigate to page 'category/*'
 Step 4: Click on link iPhone15SiliconeCaseWithMagSafe -> Navigate to page 'product/*'
@@ -99,7 +99,7 @@ Step 10: Hover over div object
 Step 11: Click on input firstName -> Navigate to page ''
 Step 12: Take full page screenshot as checkpoint
 ",High
-4,Verify Checkout Process for Multiple Items including Samsung Galaxy S23 Ultra,"Navigate to categories, add iPhone 15 and Samsung Galaxy S23 Ultra to the cart, proceed to checkout, provide shipping email, enter personal details, complete payment, and verify the completion on the homepage.","Step 1: Navigate to category/*
+4,Verify Checkout Process for Multiple Items including Samsung Galaxy S23 Ultra,"Navigate to categories, add iPhone 15 and Samsung Galaxy S23 Ultra to the cart, provide shipping email, enter shipping details, proceed to payment, complete the order, and verify the homepage.","Step 1: Navigate to category/*
 Step 2: Click on button hotNewiPhone15
 Step 3: Click on link placeAnOrder
 Step 4: Proceed to checkout by providing email for shipping
@@ -108,7 +108,7 @@ Step 4: Proceed to checkout by providing email for shipping
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
 	- Step 5: Click on button continueToShipping
-Step 5: Enter personal details for shipping and proceed to payment
+Step 5: Enter shipping details and proceed to payment
 	- Step 1: Hover over div object
 	- Step 2: Click on input firstName
 	- Step 3: Hover over div object
@@ -158,7 +158,7 @@ Step 27: Proceed to checkout by providing email for shipping
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
 	- Step 5: Click on button continueToShipping
-Step 28: Enter personal details for shipping and proceed to payment
+Step 28: Enter shipping details and proceed to payment
 	- Step 1: Hover over div object
 	- Step 2: Click on input firstName
 	- Step 3: Hover over div object

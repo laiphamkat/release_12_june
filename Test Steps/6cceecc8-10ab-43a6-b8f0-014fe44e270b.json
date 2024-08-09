@@ -1,0 +1,16 @@
+{
+    "steps": [
+        "step 1: Navigate to /",
+        "step 2: Hover over item object",
+        "step 3: Click on link appleChekhlyNaIphone -> Navigate to page 'category/*'",
+        "step 4: Click on link iPhone15SiliconeCaseWithMagSafe -> Navigate to page 'product/*'",
+        "step 5: Click on label blueTitanium",
+        "step 6: Click on label blueTitanium",
+        "step 7: Click on button buy",
+        "step 8: Click on link placeAnOrder",
+        "step 9: Proceed to checkout by providing email for shipping",
+        "step 10: Hover over div object",
+        "step 11: Click on input firstName -> Navigate to page ''",
+        "step 12: Take full page screenshot as checkpoint"
+    ]
+}

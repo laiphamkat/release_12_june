@@ -1,10 +1,10 @@
+import internal.GlobalVariable
+import katalon.common.enterShippingDetailsAndProceedToPayment
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import katalon.common.proceedToCheckoutWithEmailForShipping
-import katalon.common.enterPersonalDetailsAndProceedToPayment
-import com.kms.katalon.core.configuration.RunConfiguration
 import katalon.truetest.TrueTestScripts
-import internal.GlobalVariable
+import katalon.common.proceedToCheckoutWithEmail
+import com.kms.katalon.core.configuration.RunConfiguration
 
 def reportLocation = RunConfiguration.getReportFolder()
 
@@ -24,7 +24,7 @@ TrueTestScripts.navigate("category/${GlobalVariable.category_id}")
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/category/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_category/button_hotNewiPhone15', ['internalHasTextVariable': button_hotNewiPhone15_internalHasTextVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/button_hotNewiPhone15'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 2: Click on button hotNewiPhone15.png')
 
@@ -38,11 +38,11 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 3: Click on link placeAnOrder.p
 
 "Step 4: Proceed to checkout by providing email for shipping"
 
-proceedToCheckoutWithEmailForShipping.execute(data_path_0, Integer.valueOf(index_0))
+proceedToCheckoutWithEmail.execute(data_path_0, Integer.valueOf(index_0))
 
-"Step 5: Enter personal details for shipping and proceed to payment"
+"Step 5: Enter shipping details and proceed to payment"
 
-enterPersonalDetailsAndProceedToPayment.execute(data_path_1, Integer.valueOf(index_1))
+enterShippingDetailsAndProceedToPayment.execute(data_path_1, Integer.valueOf(index_1))
 
 "Step 6: Click on button completeOrder -> Navigate to page 'thank-you/*'"
 
@@ -64,7 +64,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 7: Click on link samsung - Navi
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/category/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_category/link_iPhone15SiliconeCaseWithMagSafe'))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/link_iPhone15SiliconeCaseWithMagSafe'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 8: Click on link iPhone15SiliconeCaseWithMagSafe - Navigate to page product.png')
 
@@ -88,7 +88,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 10: Click on link placeAnOrder 
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/cart?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_cart/button_increased', ['nthChildIndex': button_increased_nthChildIndex, 'internalRoleButtonNameVariable': button_increased_internalRoleButtonNameVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_cart/button_increased'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 11: Click on button increased.png')
 
@@ -96,7 +96,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 11: Click on button increased.p
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/cart?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_cart/button_increased', ['nthChildIndex': button_increased_nthChildIndex, 'internalRoleButtonNameVariable': button_increased_internalRoleButtonNameVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_cart/button_increased'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 12: Click on button increased.png')
 
@@ -104,7 +104,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 12: Click on button increased.p
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/cart?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_cart/button_increased', ['nthChildIndex': button_increased_nthChildIndex, 'internalRoleButtonNameVariable': button_increased_internalRoleButtonNameVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_cart/button_increased'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 13: Click on button increased.png')
 
@@ -112,7 +112,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 13: Click on button increased.p
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/cart?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_cart/button_increased', ['nthChildIndex': button_increased_nthChildIndex, 'internalRoleButtonNameVariable': button_increased_internalRoleButtonNameVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_cart/button_increased'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 14: Click on button increased.png')
 
@@ -120,7 +120,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 14: Click on button increased.p
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/cart?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_cart/button_increased', ['nthChildIndex': button_increased_nthChildIndex, 'internalRoleButtonNameVariable': button_increased_internalRoleButtonNameVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_cart/button_increased'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 15: Click on button increased.png')
 
@@ -168,7 +168,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 20: Click on link samsungGalaxy
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/product/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_product/label_blueTitanium', ['internalTextVariable': label_blueTitanium_internalTextVariable, 'forVariable': label_blueTitanium_forVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_product/label_blueTitanium'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 21: Click on label blueTitanium.png')
 
@@ -176,7 +176,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 21: Click on label blueTitanium
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/product/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_product/label_blueTitanium', ['internalTextVariable': label_blueTitanium_internalTextVariable, 'forVariable': label_blueTitanium_forVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_product/label_blueTitanium'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 22: Click on label blueTitanium.png')
 
@@ -184,7 +184,7 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 22: Click on label blueTitanium
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/product/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_product/label_blueTitanium', ['internalTextVariable': label_blueTitanium_internalTextVariable, 'forVariable': label_blueTitanium_forVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_product/label_blueTitanium'))
 
 WebUI.takeScreenshot(reportLocation + '/TC4/Step 23: Click on label blueTitanium.png')
 
@@ -214,11 +214,11 @@ WebUI.takeScreenshot(reportLocation + '/TC4/Step 26: Click on span object.png')
 
 "Step 27: Proceed to checkout by providing email for shipping"
 
-proceedToCheckoutWithEmailForShipping.execute(data_path_2, Integer.valueOf(index_2))
+proceedToCheckoutWithEmail.execute(data_path_2, Integer.valueOf(index_2))
 
-"Step 28: Enter personal details for shipping and proceed to payment"
+"Step 28: Enter shipping details and proceed to payment"
 
-enterPersonalDetailsAndProceedToPayment.execute(data_path_3, Integer.valueOf(index_3))
+enterShippingDetailsAndProceedToPayment.execute(data_path_3, Integer.valueOf(index_3))
 
 "Step 29: Click on button completeOrder -> Navigate to page ''"
 

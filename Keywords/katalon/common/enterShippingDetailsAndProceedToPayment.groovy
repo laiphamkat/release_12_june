@@ -3,10 +3,10 @@ package katalon.common
 import com.kms.katalon.core.testdata.TestData as TestData
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-public class enterPersonalDetailsAndProceedToPayment {
+public class enterShippingDetailsAndProceedToPayment {
     
     private static def execute_functional_method(Map data) {
         
@@ -102,24 +102,24 @@ public class enterPersonalDetailsAndProceedToPayment {
     private static def execute_with_data_source(String datasource, int rowIndex) {
         TestData testData = findTestData(datasource)
         Map data = [:]
-        data['var_6_input_state'] = testData.getValue('var_6_input_state', rowIndex)
-        data['var_4_input_zipCode'] = testData.getValue('var_4_input_zipCode', rowIndex)
-        data['var_2_input_lastName'] = testData.getValue('var_2_input_lastName', rowIndex)
-        data['var_3_input_address'] = testData.getValue('var_3_input_address', rowIndex)
-        data['var_7_input_phone'] = testData.getValue('var_7_input_phone', rowIndex)
         data['var_1_input_firstName'] = testData.getValue('var_1_input_firstName', rowIndex)
+        data['var_3_input_address'] = testData.getValue('var_3_input_address', rowIndex)
+        data['var_2_input_lastName'] = testData.getValue('var_2_input_lastName', rowIndex)
+        data['var_6_input_state'] = testData.getValue('var_6_input_state', rowIndex)
+        data['var_7_input_phone'] = testData.getValue('var_7_input_phone', rowIndex)
+        data['var_4_input_zipCode'] = testData.getValue('var_4_input_zipCode', rowIndex)
         data['var_5_input_city'] = testData.getValue('var_5_input_city', rowIndex)
         execute_functional_method(data)
     }
     
     private static def execute_without_data_source() {
         Map data = [:]
-        data['var_6_input_state'] = 'default_data'
-        data['var_4_input_zipCode'] = 'default_data'
-        data['var_2_input_lastName'] = 'default_data'
-        data['var_3_input_address'] = 'default_data'
-        data['var_7_input_phone'] = 'default_data'
         data['var_1_input_firstName'] = 'default_data'
+        data['var_3_input_address'] = 'default_data'
+        data['var_2_input_lastName'] = 'default_data'
+        data['var_6_input_state'] = 'default_data'
+        data['var_7_input_phone'] = 'default_data'
+        data['var_4_input_zipCode'] = 'default_data'
         data['var_5_input_city'] = 'default_data'
         execute_functional_method(data)
     }

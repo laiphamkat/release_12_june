@@ -1,10 +1,10 @@
+import internal.GlobalVariable
+import katalon.common.enterShippingDetailsAndProceedToPayment
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import katalon.common.proceedToCheckoutWithEmailForShipping
-import katalon.common.enterPersonalDetailsAndProceedToPayment
-import com.kms.katalon.core.configuration.RunConfiguration
 import katalon.truetest.TrueTestScripts
-import internal.GlobalVariable
+import katalon.common.proceedToCheckoutWithEmail
+import com.kms.katalon.core.configuration.RunConfiguration
 
 def reportLocation = RunConfiguration.getReportFolder()
 
@@ -32,7 +32,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 2: Click on button addToCart.pn
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.mouseOver(findTestObject('AI-Generated/Parameterized Objects/Page_home/item_object'))
+WebUI.mouseOver(findTestObject('AI-Generated/Page_home/item_object'))
 
 WebUI.takeScreenshot(reportLocation + '/TC1/Step 3: Hover over item object.png')
 
@@ -48,7 +48,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 4: Click on link apple - Naviga
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/category/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_category/button_hotNewiPhone15', ['internalHasTextVariable': button_hotNewiPhone15_internalHasTextVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/button_hotNewiPhone15'))
 
 WebUI.takeScreenshot(reportLocation + '/TC1/Step 5: Click on button hotNewiPhone15.png')
 
@@ -56,7 +56,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 5: Click on button hotNewiPhone
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/category/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_category/label_256Gb', ['internalTextVariable': label_256Gb_internalTextVariable, 'forVariable': label_256Gb_forVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/label_256Gb'))
 
 WebUI.takeScreenshot(reportLocation + '/TC1/Step 6: Click on label 256Gb.png')
 
@@ -64,7 +64,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 6: Click on label 256Gb.png')
 
 // WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/category/.*?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Parameterized Objects/Page_category/label_256Gb', ['internalTextVariable': label_256Gb_internalTextVariable, 'forVariable': label_256Gb_forVariable]))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_category/label_256Gb'))
 
 WebUI.takeScreenshot(reportLocation + '/TC1/Step 7: Click on label 256Gb.png')
 
@@ -86,11 +86,11 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 9: Click on link goToCart.png')
 
 "Step 10: Proceed to checkout by providing email for shipping"
 
-proceedToCheckoutWithEmailForShipping.execute(data_path_0, Integer.valueOf(index_0))
+proceedToCheckoutWithEmail.execute(data_path_0, Integer.valueOf(index_0))
 
-"Step 11: Enter personal details for shipping and proceed to payment"
+"Step 11: Enter shipping details and proceed to payment"
 
-enterPersonalDetailsAndProceedToPayment.execute(data_path_1, Integer.valueOf(index_1))
+enterShippingDetailsAndProceedToPayment.execute(data_path_1, Integer.valueOf(index_1))
 
 "Step 12: Click on button completeOrder -> Navigate to page ''"
 
@@ -102,7 +102,7 @@ WebUI.takeScreenshot(reportLocation + '/TC1/Step 12: Click on button completeOrd
 
 "Step 13: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Successful Checkout Process for iPhone 15_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Checkout Process for Apple iPhone 15_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
