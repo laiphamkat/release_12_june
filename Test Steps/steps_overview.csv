@@ -1,46 +1,5 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Checkout Process for Apple iPhone 15,"Navigate to the homepage, add an iPhone 15 to the cart, provide shipping email, enter shipping details, proceed to payment, complete the order, and verify the homepage.","Step 1: Navigate to /
-Step 2: Click on button addToCart
-Step 3: Hover over item object
-Step 4: Click on link apple -> Navigate to page 'category/*'
-Step 5: Click on button hotNewiPhone15
-Step 6: Click on label 256Gb
-Step 7: Click on label 256Gb
-Step 8: Click on button dialog
-Step 9: Click on link goToCart
-Step 10: Proceed to checkout by providing email for shipping
-	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
-	- Step 2: Hover over div object
-	- Step 3: Click on input email
-	- Step 4: Enter input value in input email
-	- Step 5: Click on button continueToShipping
-Step 11: Enter shipping details and proceed to payment
-	- Step 1: Hover over div object
-	- Step 2: Click on input firstName
-	- Step 3: Hover over div object
-	- Step 4: Enter input value in input firstName
-	- Step 5: Click on input lastName
-	- Step 6: Hover over div object
-	- Step 7: Enter input value in input lastName
-	- Step 8: Click on input address
-	- Step 9: Hover over div object
-	- Step 10: Enter input value in input address
-	- Step 11: Click on input zipCode
-	- Step 12: Hover over div object
-	- Step 13: Enter input value in input zipCode
-	- Step 14: Click on input city
-	- Step 15: Hover over div object
-	- Step 16: Enter input value in input city
-	- Step 17: Click on input state
-	- Step 18: Hover over div object
-	- Step 19: Enter input value in input state
-	- Step 20: Click on input phone
-	- Step 21: Enter input value in input phone
-	- Step 22: Click on button continueToPayment
-Step 12: Click on button completeOrder -> Navigate to page ''
-Step 13: Take full page screenshot as checkpoint
-",High
-2,Verify Checkout Process for iPhone 15 Pro in Blue Titanium,"Navigate to the homepage, select iPhone 15 Pro in Blue Titanium, add to cart, provide shipping email, enter shipping details, proceed to payment, complete the order, and verify the homepage.","Step 1: Navigate to /
+1,Verify Checkout Process for IPhone 15 Pro with Multiple Quantity,"Navigate to the homepage, select IPhone 15 Pro, adjust quantity, choose color, add to cart, proceed to checkout, fill shipping and payment details, complete the order, and verify homepage.","Step 1: Navigate to /
 Step 2: Click on link iPhone15Pro -> Navigate to page 'product/*'
 Step 3: Click on button minus
 Step 4: Click on button minus
@@ -49,138 +8,235 @@ Step 6: Click on label blueTitanium
 Step 7: Click on label blueTitanium
 Step 8: Click on button minus
 Step 9: Click on link placeAnOrder
-Step 10: Proceed to checkout by providing email for shipping
+Step 10: Proceed to checkout, fill shipping information, and proceed to payment
 	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
 	- Step 2: Hover over div object
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
-	- Step 5: Click on button continueToShipping
-Step 11: Enter shipping details and proceed to payment
-	- Step 1: Hover over div object
-	- Step 2: Click on input firstName
-	- Step 3: Hover over div object
-	- Step 4: Enter input value in input firstName
-	- Step 5: Click on input lastName
+	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
 	- Step 6: Hover over div object
-	- Step 7: Enter input value in input lastName
-	- Step 8: Click on input address
-	- Step 9: Hover over div object
-	- Step 10: Enter input value in input address
-	- Step 11: Click on input zipCode
-	- Step 12: Hover over div object
-	- Step 13: Enter input value in input zipCode
-	- Step 14: Click on input city
-	- Step 15: Hover over div object
-	- Step 16: Enter input value in input city
-	- Step 17: Click on input state
-	- Step 18: Hover over div object
-	- Step 19: Enter input value in input state
-	- Step 20: Click on input phone
-	- Step 21: Enter input value in input phone
-	- Step 22: Click on button continueToPayment
+	- Step 7: Click on input firstName
+	- Step 8: Hover over div object
+	- Step 9: Enter input value in input firstName
+	- Step 10: Click on input lastName
+	- Step 11: Hover over div object
+	- Step 12: Enter input value in input lastName
+	- Step 13: Click on input address
+	- Step 14: Hover over div object
+	- Step 15: Enter input value in input address
+	- Step 16: Click on input zipCode
+	- Step 17: Hover over div object
+	- Step 18: Enter input value in input zipCode
+	- Step 19: Click on input city
+	- Step 20: Hover over div object
+	- Step 21: Enter input value in input city
+	- Step 22: Click on input state
+	- Step 23: Hover over div object
+	- Step 24: Enter input value in input state
+	- Step 25: Click on input phone
+	- Step 26: Enter input value in input phone
+	- Step 27: Click on button continueToPayment
+Step 11: Click on button completeOrder -> Navigate to page ''
+Step 12: Take full page screenshot as checkpoint
+",High
+2,Verify Checkout Process for Apple Power Adapter Purchase,"Navigate to the homepage, select Apple Power Adapter, adjust quantity, make a purchase, proceed to checkout, fill shipping and payment details, complete the order, and verify homepage.","Step 1: Navigate to /
+Step 2: Click on link appleChekhlyNaIphone -> Navigate to page 'category/*'
+Step 3: Click on link productApplePowerAdapter -> Navigate to page 'product/*'
+Step 4: Click on button increased
+Step 5: Click on button buy
+Step 6: Click on link placeAnOrder
+Step 7: Proceed to checkout, fill shipping information, and proceed to payment
+	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 2: Hover over div object
+	- Step 3: Click on input email
+	- Step 4: Enter input value in input email
+	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
+	- Step 6: Hover over div object
+	- Step 7: Click on input firstName
+	- Step 8: Hover over div object
+	- Step 9: Enter input value in input firstName
+	- Step 10: Click on input lastName
+	- Step 11: Hover over div object
+	- Step 12: Enter input value in input lastName
+	- Step 13: Click on input address
+	- Step 14: Hover over div object
+	- Step 15: Enter input value in input address
+	- Step 16: Click on input zipCode
+	- Step 17: Hover over div object
+	- Step 18: Enter input value in input zipCode
+	- Step 19: Click on input city
+	- Step 20: Hover over div object
+	- Step 21: Enter input value in input city
+	- Step 22: Click on input state
+	- Step 23: Hover over div object
+	- Step 24: Enter input value in input state
+	- Step 25: Click on input phone
+	- Step 26: Enter input value in input phone
+	- Step 27: Click on button continueToPayment
+Step 8: Click on button completeOrder -> Navigate to page ''
+Step 9: Take full page screenshot as checkpoint
+",High
+3,Verify Checkout Process for Hot New IPhone 15 Purchase,"Navigate to the homepage, add IPhone to cart, choose specifications, proceed to checkout, fill shipping and payment details, complete the order, and verify homepage.","Step 1: Navigate to /
+Step 2: Click on button addToCart
+Step 3: Hover over item object
+Step 4: Click on link apple -> Navigate to page 'category/*'
+Step 5: Click on button hotNewiPhone15
+Step 6: Click on label 256Gb
+Step 7: Click on label 256Gb
+Step 8: Click on button dialog
+Step 9: Click on link goToCart
+Step 10: Proceed to checkout, fill shipping information, and proceed to payment
+	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 2: Hover over div object
+	- Step 3: Click on input email
+	- Step 4: Enter input value in input email
+	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
+	- Step 6: Hover over div object
+	- Step 7: Click on input firstName
+	- Step 8: Hover over div object
+	- Step 9: Enter input value in input firstName
+	- Step 10: Click on input lastName
+	- Step 11: Hover over div object
+	- Step 12: Enter input value in input lastName
+	- Step 13: Click on input address
+	- Step 14: Hover over div object
+	- Step 15: Enter input value in input address
+	- Step 16: Click on input zipCode
+	- Step 17: Hover over div object
+	- Step 18: Enter input value in input zipCode
+	- Step 19: Click on input city
+	- Step 20: Hover over div object
+	- Step 21: Enter input value in input city
+	- Step 22: Click on input state
+	- Step 23: Hover over div object
+	- Step 24: Enter input value in input state
+	- Step 25: Click on input phone
+	- Step 26: Enter input value in input phone
+	- Step 27: Click on button continueToPayment
+Step 11: Click on button completeOrder -> Navigate to page ''
+Step 12: Take full page screenshot as checkpoint
+",High
+4,Verify Checkout Process for IPhone 15 Purchase with Sorting,"Navigate to the homepage, select IPhone with sorting, choose specifications, make a purchase, proceed to checkout, fill shipping and payment details, complete the order, and verify homepage.","Step 1: Navigate to /
+Step 2: Hover over item object
+Step 3: Click on link apple -> Navigate to page 'category/*'
+Step 4: Click on link sortByTitle
+Step 5: Click on button hotNewiPhone15
+Step 6: Click on label 256Gb
+Step 7: Click on label 256Gb
+Step 8: Click on button buy
+Step 9: Click on link goToCart -> Navigate to page '/cart'
+Step 10: Click on button increased
+Step 11: Proceed to checkout, fill shipping information, and proceed to payment
+	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
+	- Step 2: Hover over div object
+	- Step 3: Click on input email
+	- Step 4: Enter input value in input email
+	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
+	- Step 6: Hover over div object
+	- Step 7: Click on input firstName
+	- Step 8: Hover over div object
+	- Step 9: Enter input value in input firstName
+	- Step 10: Click on input lastName
+	- Step 11: Hover over div object
+	- Step 12: Enter input value in input lastName
+	- Step 13: Click on input address
+	- Step 14: Hover over div object
+	- Step 15: Enter input value in input address
+	- Step 16: Click on input zipCode
+	- Step 17: Hover over div object
+	- Step 18: Enter input value in input zipCode
+	- Step 19: Click on input city
+	- Step 20: Hover over div object
+	- Step 21: Enter input value in input city
+	- Step 22: Click on input state
+	- Step 23: Hover over div object
+	- Step 24: Enter input value in input state
+	- Step 25: Click on input phone
+	- Step 26: Enter input value in input phone
+	- Step 27: Click on button continueToPayment
 Step 12: Click on button completeOrder -> Navigate to page ''
 Step 13: Take full page screenshot as checkpoint
 ",High
-3,Verify Checkout Process for iPhone 15 Silicone Case with MagSafe,"Navigate to the homepage, select iPhone 15 Silicone Case with MagSafe, add to cart, provide shipping email, enter shipping details, proceed to payment, verify the homepage.","Step 1: Navigate to /
-Step 2: Hover over item object
-Step 3: Click on link appleChekhlyNaIphone -> Navigate to page 'category/*'
-Step 4: Click on link iPhone15SiliconeCaseWithMagSafe -> Navigate to page 'product/*'
-Step 5: Click on label blueTitanium
-Step 6: Click on label blueTitanium
-Step 7: Click on button buy
-Step 8: Click on link placeAnOrder
-Step 9: Proceed to checkout by providing email for shipping
-	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
-	- Step 2: Hover over div object
-	- Step 3: Click on input email
-	- Step 4: Enter input value in input email
-	- Step 5: Click on button continueToShipping
-Step 10: Hover over div object
-Step 11: Click on input firstName -> Navigate to page ''
-Step 12: Take full page screenshot as checkpoint
-",High
-4,Verify Checkout Process for Multiple Items including Samsung Galaxy S23 Ultra,"Navigate to categories, add iPhone 15 and Samsung Galaxy S23 Ultra to the cart, provide shipping email, enter shipping details, proceed to payment, complete the order, and verify the homepage.","Step 1: Navigate to category/*
+5,Verify Checkout Process for Multiple Items and Brands,"Select IPhone, proceed to checkout, complete the order, switch to Samsung category, add Samsung product, adjust quantity, remove item, proceed to checkout, fill shipping and payment details, complete the order, and verify homepage.","Step 1: Navigate to category/*
 Step 2: Click on button hotNewiPhone15
 Step 3: Click on link placeAnOrder
-Step 4: Proceed to checkout by providing email for shipping
+Step 4: Proceed to checkout, fill shipping information, and proceed to payment
 	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
 	- Step 2: Hover over div object
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
-	- Step 5: Click on button continueToShipping
-Step 5: Enter shipping details and proceed to payment
-	- Step 1: Hover over div object
-	- Step 2: Click on input firstName
-	- Step 3: Hover over div object
-	- Step 4: Enter input value in input firstName
-	- Step 5: Click on input lastName
+	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
 	- Step 6: Hover over div object
-	- Step 7: Enter input value in input lastName
-	- Step 8: Click on input address
-	- Step 9: Hover over div object
-	- Step 10: Enter input value in input address
-	- Step 11: Click on input zipCode
-	- Step 12: Hover over div object
-	- Step 13: Enter input value in input zipCode
-	- Step 14: Click on input city
-	- Step 15: Hover over div object
-	- Step 16: Enter input value in input city
-	- Step 17: Click on input state
-	- Step 18: Hover over div object
-	- Step 19: Enter input value in input state
-	- Step 20: Click on input phone
-	- Step 21: Enter input value in input phone
-	- Step 22: Click on button continueToPayment
-Step 6: Click on button completeOrder -> Navigate to page 'thank-you/*'
-Step 7: Click on link samsung -> Navigate to page 'category/*'
-Step 8: Click on link iPhone15SiliconeCaseWithMagSafe -> Navigate to page 'product/*'
-Step 9: Click on button buy
-Step 10: Click on link placeAnOrder -> Navigate to page '/cart'
+	- Step 7: Click on input firstName
+	- Step 8: Hover over div object
+	- Step 9: Enter input value in input firstName
+	- Step 10: Click on input lastName
+	- Step 11: Hover over div object
+	- Step 12: Enter input value in input lastName
+	- Step 13: Click on input address
+	- Step 14: Hover over div object
+	- Step 15: Enter input value in input address
+	- Step 16: Click on input zipCode
+	- Step 17: Hover over div object
+	- Step 18: Enter input value in input zipCode
+	- Step 19: Click on input city
+	- Step 20: Hover over div object
+	- Step 21: Enter input value in input city
+	- Step 22: Click on input state
+	- Step 23: Hover over div object
+	- Step 24: Enter input value in input state
+	- Step 25: Click on input phone
+	- Step 26: Enter input value in input phone
+	- Step 27: Click on button continueToPayment
+Step 5: Click on button completeOrder -> Navigate to page 'thank-you/*'
+Step 6: Click on link samsung -> Navigate to page 'category/*'
+Step 7: Click on link productApplePowerAdapter -> Navigate to page 'product/*'
+Step 8: Click on button buy
+Step 9: Click on link placeAnOrder -> Navigate to page '/cart'
+Step 10: Click on button increased
 Step 11: Click on button increased
 Step 12: Click on button increased
 Step 13: Click on button increased
 Step 14: Click on button increased
-Step 15: Click on button increased
-Step 16: Click on button remove
-Step 17: Hover over item object
-Step 18: Click on link samsung -> Navigate to page 'category/*'
-Step 19: Click on div hot
-Step 20: Click on link samsungGalaxyS23UltraHot -> Navigate to page 'product/*'
+Step 15: Click on button remove
+Step 16: Hover over item object
+Step 17: Click on link samsung -> Navigate to page 'category/*'
+Step 18: Click on div hot
+Step 19: Click on link samsungGalaxyS23UltraHot -> Navigate to page 'product/*'
+Step 20: Click on label blueTitanium
 Step 21: Click on label blueTitanium
 Step 22: Click on label blueTitanium
-Step 23: Click on label blueTitanium
-Step 24: Click on button buy
-Step 25: Hover over link goToCart
-Step 26: Click on span object
-Step 27: Proceed to checkout by providing email for shipping
+Step 23: Click on button buy
+Step 24: Hover over link goToCart
+Step 25: Click on span object
+Step 26: Proceed to checkout, fill shipping information, and proceed to payment
 	- Step 1: Click on button proceedToCheckout -> Navigate to page 'checkout/info'
 	- Step 2: Hover over div object
 	- Step 3: Click on input email
 	- Step 4: Enter input value in input email
-	- Step 5: Click on button continueToShipping
-Step 28: Enter shipping details and proceed to payment
-	- Step 1: Hover over div object
-	- Step 2: Click on input firstName
-	- Step 3: Hover over div object
-	- Step 4: Enter input value in input firstName
-	- Step 5: Click on input lastName
+	- Step 5: Click on button continueToShipping -> Navigate to page 'checkout/shipping-address'
 	- Step 6: Hover over div object
-	- Step 7: Enter input value in input lastName
-	- Step 8: Click on input address
-	- Step 9: Hover over div object
-	- Step 10: Enter input value in input address
-	- Step 11: Click on input zipCode
-	- Step 12: Hover over div object
-	- Step 13: Enter input value in input zipCode
-	- Step 14: Click on input city
-	- Step 15: Hover over div object
-	- Step 16: Enter input value in input city
-	- Step 17: Click on input state
-	- Step 18: Hover over div object
-	- Step 19: Enter input value in input state
-	- Step 20: Click on input phone
-	- Step 21: Enter input value in input phone
-	- Step 22: Click on button continueToPayment
-Step 29: Click on button completeOrder -> Navigate to page ''
-Step 30: Take full page screenshot as checkpoint
+	- Step 7: Click on input firstName
+	- Step 8: Hover over div object
+	- Step 9: Enter input value in input firstName
+	- Step 10: Click on input lastName
+	- Step 11: Hover over div object
+	- Step 12: Enter input value in input lastName
+	- Step 13: Click on input address
+	- Step 14: Hover over div object
+	- Step 15: Enter input value in input address
+	- Step 16: Click on input zipCode
+	- Step 17: Hover over div object
+	- Step 18: Enter input value in input zipCode
+	- Step 19: Click on input city
+	- Step 20: Hover over div object
+	- Step 21: Enter input value in input city
+	- Step 22: Click on input state
+	- Step 23: Hover over div object
+	- Step 24: Enter input value in input state
+	- Step 25: Click on input phone
+	- Step 26: Enter input value in input phone
+	- Step 27: Click on button continueToPayment
+Step 27: Click on button completeOrder -> Navigate to page ''
+Step 28: Take full page screenshot as checkpoint
 ",High
